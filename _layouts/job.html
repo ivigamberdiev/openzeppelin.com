@@ -9,7 +9,7 @@ layout: default
     flex-direction: column;
 	flex: 0;
 	min-width: 140px;
-	margin-bottom: 40px;
+	margin-bottom: 10px;
 }
 
 .page-job .sidebar ul {
@@ -114,7 +114,37 @@ layout: default
     line-height: 1.25;
 }
 
+.heading {
+  	text-align: center;
+}
+
+#content-desktop {display: block;}
+#content-mobile {display: none;}
+
+@media screen and (max-width: 768px) {
+
+	#content-desktop {display: none;}
+	#content-mobile {
+		display: block;
+		margin: 30px 0 10px;
+    	font-size: 28px;
+	}
+	.btn.btn--ghost {
+		margin: 20px 0 0;
+	}
+	.page-job .sidebar li {
+    	margin: 10px 0;
+    	text-transform: uppercase;
+	}
+	.page-job .sidebar ul {
+    	padding: 15px 0;
+	}
+}
+
 @media (min-width: 980px) {
+	.heading {
+    	text-align: left;
+	}
 	.page-job .sidebar li {
     	opacity: 0.8;
 		border: none;
@@ -158,16 +188,19 @@ layout: default
 		<div class="container">
 			<div class="sidebar">
 				<a class="btn btn--ghost" href="/jobs#openings">< ALL POSITIONS</a>
-				<ul>
-					<li>{{page.location}}</li>
-					<li>{{page.type}}</li>
-					<li>{{page.team}}</li>
-				</ul>
-				<a class="btn apply" href="https://airtable.com/shrqTXBRIBFCnXD3i">APPLY</a>
+				<h1 class="job-title heading" id="content-mobile">{{ page.title }}</h1>
+				<div class="sidebar">
+					<ul>
+						<li>{{page.location}}</li>
+						<li>{{page.type}}</li>
+						<li>{{page.team}}</li>
+					</ul>
+					<a class="btn apply" href="https://airtable.com/shrqTXBRIBFCnXD3i">APPLY</a>
+				</div>
 			</div>
-
+			
 			<div class="job-description">
-				<h1 class="job-title heading">{{ page.title }}</h1>
+				<h1 class="job-title heading" id="content-desktop">{{ page.title }}</h1>
 				<div class="company-description">
 					<p>
 						At OpenZeppelin, we have built the world’s leading Open Source library for smart contract development. OpenZeppelin Contracts powers over 3,000 public projects, with over 7,000 stars on Github and maintained by a community of 180+ contributors. We also conduct security audits for the Ethereum Foundation, Coinbase, and other leading organizations in the space.
