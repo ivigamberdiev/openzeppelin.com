@@ -206,10 +206,13 @@ layout: default
 			border-right: none;
 		}
 	}
-
+	
 	@media (min-width: 980px) {
+		.heading{
+			max-width: 80%;
+		}
 		.page-landing .hero .heading {
-			font-size: 3rem;
+			font-size: 2.75rem;
 		}
 
 		.page-landing .l-hero .section__bg-landing {
@@ -291,7 +294,7 @@ layout: default
 
 		.page-landing .hero .description {
 			margin: 0 auto;
-			max-width: 615px;
+			max-width: 80%;
 			font-size: 1.1em;
 		}
 
@@ -320,9 +323,15 @@ layout: default
 		}
 	}
 
+	@media (min-width: 1025px) {
+		.page-landing .hero .heading {
+			font-size: 3rem;
+		}
+	}
+
 	@media (max-height: 600px) {
 		.page-landing .l-hero .container {
-			height: calc(100vh - 70px);
+			height: calc(85vh - 100px);
 		}
 	}
 
