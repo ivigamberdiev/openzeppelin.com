@@ -17,6 +17,7 @@ slug: ''
   <p>
     As a Security services platform developer , you will join a team building a new security services platform for operational security of smart contract systems, to be launched in October, currently in trial mode with seven top-tier projects from the Ethereum space.
   </p>
+  <br>
   <p>
     In this role, you will play an essential part in the building of our new platform and services, by contributing from different angles, such as: developing components, communicating with our users to gather feedback, and working collaboratively with the rest of the team to make sure we provide a good user experience.
   </p>
