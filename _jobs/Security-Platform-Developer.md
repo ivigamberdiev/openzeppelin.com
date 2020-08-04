@@ -1,6 +1,6 @@
 ---
 layout: job
-title: 'Security Services Platform Developer'
+title: 'Security Platform Developer'
 location: 'Global'
 type: 'Full Time'
 team: 'Product'
@@ -15,7 +15,7 @@ slug: ''
 <div class="requirements">
   <h3 class="job-description-title">What you'll be doing</h3>
   <p>
-    As a Security services platform developer , you will join a team building a new security services platform for operational security of smart contract systems, to be launched in October, currently in trial mode with seven top-tier projects from the Ethereum space.
+    As a Security platform developer , you will join a team building a new security services platform for operational security of smart contract systems, to be launched in October, currently in trial mode with seven top-tier projects from the Ethereum space.
   </p>
   <br>
   <p>
